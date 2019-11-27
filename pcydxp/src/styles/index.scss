@@ -1,0 +1,255 @@
+@import './element-ui.scss';
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFang SC Medium;
+  // font-family: Helvetica Neue, Helvetica, PingFang SC, PingFangSC-Medium, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+/*表格样式*/
+.content-box{
+  width: 100%;
+  // height: 100%;
+  padding: 0 17px !important;
+  // overflow: auto;
+}
+.content-list-box{
+  background: #FFFFFF;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 16px 18px 0;
+  position: relative;
+}
+.box-tip{
+  position: absolute;
+  display:inline-block;
+  background-color:#FF1A00;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.box-title{
+  border-bottom: 1px solid #EBEEF5;
+}
+.box-title-text{
+  font-size: 16px;
+  margin-left:13px;
+  margin-bottom: 10px;
+  color:#484848;
+  display: inline-block;
+}
+.box-list{
+  padding: 0 13px 0 13px;
+}
+.box-list .el-table--group::after,
+.box-list .el-table--border::after,
+.box-list .el-table::before{
+  background-color: #ffffff !important;
+}
+/*按钮样式*/
+.btn{
+  text-align: center;
+}
+.btn .el-button{
+  width: 100px;
+  height: 25.3px;
+  line-height: 25.3px;
+  padding: 0;
+  background: #737374;
+  box-shadow: 0 2px 8px 0 rgba(179,179,179,0.35);
+  border-radius: 100px;
+  font-size: 11px;
+}
+/*from表单*/
+.from-box{
+  padding-top: 6px;
+  padding-bottom: 7px;
+  overflow: auto;
+}
+.from-box .start{
+  color: #FF1A00;
+}
+.from-box .el-row {
+  margin-bottom: 15px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.from-box .el-row div{
+  display: inline-block;
+}
+.from-box .el-row .el-col .row-first{
+  margin-left: 16px;
+}
+.from-box .el-row .el-col > div:nth-child(1){
+    width: 60px;
+    text-align: right;
+  }
+.from-box .el-row .el-col > div:nth-child(2){
+  padding-left: 20px;
+  text-align: left;
+}
+.from-box .box-middle-right{
+  width: 84px !important;
+  margin-left: -24PX;
+}
+.from-box .box-max-right{
+  width: 130px !important;
+  margin-left: -10PX;
+}
+.from-box .el-row .el-col input{
+  width: 210px;
+  height: 26px;
+  line-height:26px;
+}
+.from-box .relation-box{
+  font-size: 0;
+}
+.from-box .relation-box .row-first{
+  font-size: 12px;
+}
+.from-box .relationInput{
+  margin-right: 20px;
+  width: 210px;
+}
+.from-box .el-col .max-input input{
+  width: 100%;
+}
+.from-box .no-inline-block{
+  display: block !important;
+  width: fit-content !important;
+}
+/*弹窗样式*/
+.dialog-css{
+	overflow: hidden;
+	border-radius: 20px;
+	*{
+		margin:0;
+		padding:0;
+	}
+	.dialog-title{
+		height: 28px;
+		line-height: 28px;
+		text-align: center;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+	.station-img{
+		width: 220px;
+		height: 198px;
+		text-align: center;
+		margin: auto;
+		img{
+			background-size: 100%;
+		}
+	}
+	.dialog-text{
+		margin-top: 13px;
+		margin-bottom: 13px;
+		margin-left: 43px;
+		width: 270px;
+		font-size: 14px;
+		color: #444444;
+		letter-spacing: 0;
+		text-align: center;
+		line-height: 18px;
+	}
+}
+/*列表无数据*/
+.no-data-div{
+  height: 72px;
+  margin-top: 35px;
+}
+.no-data-p{
+  height: 17px;
+  line-height: 17px;
+  margin-top: 13px;
+}
